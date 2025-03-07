@@ -1,0 +1,89 @@
+/* src/pages/PageThree.css */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #f9e4e4, #f0d1f4); /* Градиентный фон */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.text-container {
+    margin-bottom: 30px;  /* Отступ между текстом и цветами */
+}
+
+.text-row {
+    font-size: 32px;
+    color: #ff66cc;
+    margin: 10px 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.6);  /* Тень текста */
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+.flowers {
+    font-size: 40px;
+    margin-top: 20px;
+    animation: floatFlowers 1.5s ease-in-out infinite;
+}
+
+@keyframes floatFlowers {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-10px);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.hearts {
+    font-size: 40px;
+    margin-top: 20px;
+    animation: pulseHearts 2s infinite;
+}
+
+@keyframes pulseHearts {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.next-button {
+    font-size: 40px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #ff3366;
+    transition: transform 0.3s ease-in-out;
+}
+
+.next-button:hover {
+    transform: scale(1.2);
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+    }
+    50% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+    }
+    100% {
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+    }
+}

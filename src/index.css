@@ -1,0 +1,243 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: pink;
+    text-align: center;
+}
+
+.heart {
+    font-size: 80px;
+}
+
+.next-button {
+    font-size: 40px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+.polaroid {
+    display: inline-block;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    transform: rotate(2deg);
+}
+
+.polaroid img {
+    max-width: 100%;
+    display: block;
+    border: 5px solid #fff;
+}
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #fff4f4;
+    text-align: center;
+}
+
+.heart-animation {
+    font-size: 80px;
+    margin-top: 20px;
+}
+
+.flowers {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #ff66cc;
+}
+
+.next-button {
+    font-size: 40px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #ff3366;
+}
+.next-button {
+    font-size: 40px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #ff3366;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #fff4f4;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    color: #ff66cc;
+}
+
+.heart-animation {
+    font-size: 80px;
+    margin-top: 20px;
+}
+
+.flowers {
+    font-size: 40px;
+    margin-top: 20px;
+}
+body {
+    background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    overflow: hidden;
+}
+
+.home-container, .page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.heart {
+    font-size: 80px;
+    transition: transform 0.3s;
+}
+
+.heart:hover {
+    transform: scale(1.3);
+}
+
+.glowing-text {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 10px pink, 0 0 20px hotpink;
+}
+
+.petal {
+    position: absolute;
+    top: -10px;
+    font-size: 20px;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+.next-button {
+    font-size: 40px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #ff3366;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.next-button:hover {
+    transform: scale(1.1);
+    background-color: #ff99cc;
+}
+@media (max-width: 768px) {
+    .next-button {
+        font-size: 30px;
+    }
+
+    .heart {
+        font-size: 60px;
+    }
+
+    .glowing-text {
+        font-size: 28px;
+    }
+}
+/* Стиль для страницы */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #fff4f4;
+    text-align: center;
+    position: relative; /* Нужно для позиционирования смайликов */
+}
+
+/* Стиль для кнопки "Обнимаю" */
+.hug-button {
+    font-size: 30px; /* Уменьшаем размер кнопки */
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #ff66cc;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Анимации для кнопки */
+.hug-button:hover {
+    background-color: #ff3385;
+}
+
+.hug-button:active {
+    background-color: #ff99cc;
+}
+
+/* Контейнер для множества смайликов */
+.hug-smileys-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none; /* Чтобы смайлики не мешали взаимодействию с другими элементами */
+}
+
+/* Стиль для разлетающихся маленьких смайликов */
+.hug-smiley {
+    font-size: 40px; /* Маленький размер смайлика */
+    position: absolute;
+    opacity: 1;
+    animation: hug-animation 2s ease-out forwards;
+}
+
+/* Ключевые кадры для анимации разлетающихся смайликов */
+@keyframes hug-animation {
+    0% {
+        opacity: 1;
+        transform: scale(0.5) translate(0, 0);
+    }
+    50% {
+        opacity: 0.7;
+        transform: scale(1.5) translate(100px, -100px);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0) translate(200px, 200px);
+    }
+}
+
+.next-button {
+    font-size: 40px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #ff3366;
+}

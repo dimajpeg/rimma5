@@ -1,0 +1,17 @@
+/* src/components/PolaroidPhoto.css */
+.polaroid {
+    display: inline-block;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    transform: rotate(2deg);
+    max-width: 300px; /* Ограничиваем максимальную ширину */
+    margin-bottom: 20px; /* Отступ снизу, чтобы фото не слипалось с текстом */
+}
+
+.polaroid-img {
+    width: 100%;  /* Фото будет занимать всю доступную ширину блока */
+    height: auto;  /* Автоматически подгоняется высота */
+    max-height: 200px; /* Ограничиваем максимальную высоту */
+    object-fit: cover;  /* Обрезка фото, если оно слишком большое */
+}
